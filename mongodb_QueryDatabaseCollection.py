@@ -2,7 +2,7 @@ import pymongo
 import ssl
 #Use Cluster0
 
-client = pymongo.MongoClient("mongodb+srv://asamant:MApeZZu5VcMpD6t3@cluster0.oovet.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://asamant:<password>@cluster0.oovet.mongodb.net/?retryWrites=true&w=majority")
 
 
 
