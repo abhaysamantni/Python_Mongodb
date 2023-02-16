@@ -2,12 +2,12 @@ import pymongo
 import ssl
 #Use Cluster0
 
-client = pymongo.MongoClient("mongodb+srv://asamant:<password>@cluster0.oovet.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://asamant:EE461LSp23@cluster0.oovet.mongodb.net/?retryWrites=true&w=majority")
 
 
 
 
-db = client.gettingStartedSp22
+db = client.test
 people = db.people3
 import datetime
 personDocument = {
@@ -18,11 +18,11 @@ personDocument = {
  "views": 250}
  
 people.insert_one(personDocument)
-myquery={"name.first":"Ishika"}
+myquery={"name.first":"Abhay"}
 x=people.find_one(myquery)
 print(x)
-if(x==None):
-    print("Name not found\n")
-else:
+if(x['name']=={'first': 'Abhay', 'last': 'Samant'}):
     print("Name found\n")
+else:
+    print("Name not found\n")
    
