@@ -1,8 +1,8 @@
 from pymongo import MongoClient
 
 # Use this cluster
-client = MongoClient("mongodb+srv://asamant:EE461LSp23@cluster0.oovet.mongodb.net/HWSet1?retryWrites=true&w=majority")
-db = client.HardwareSet
+client = MongoClient("mongodb+srv://asamant:Bhai0226@cluster0.oovet.mongodb.net/?retryWrites=true&w=majority")
+db = client.HardwareSetApad
 posts = db.HWSet1
 # print(collection)
 post = {"Description": "Hardware Set 3",
