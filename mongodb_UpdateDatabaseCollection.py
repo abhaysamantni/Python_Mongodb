@@ -21,7 +21,7 @@ people.insert_one(personDocument)
 myquery={"name.first":"Abhay"}
 x=people.find_one(myquery)
 print(x)
-if(x['name']=={'first': 'Abhay', 'last': 'Samant'}):
+if(x['name']=={'first': 'Abhay', 'last': 'Samant1'}):
     print("Name found\n")
 else:
     print("Name not found\n")

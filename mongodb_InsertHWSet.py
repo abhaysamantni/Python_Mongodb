@@ -1,13 +1,12 @@
 from pymongo import MongoClient
 
 # Use this cluster
-client = MongoClient("mongodb+srv://asamant:Bhai0226@cluster0.oovet.mongodb.net/?retryWrites=true&w=majority")
-db = client.HardwareSetApad
-posts = db.HWSet1
+client = MongoClient("mongodb+srv://asamant:Spring2024@cluster0.oovet.mongodb.net/?retryWrites=true&w=majority")
+db = client.Users
+posts = db.abhaysamant
 # print(collection)
-post = {"Description": "Hardware Set 3",
-        "Capacity": "200",
-        "Availability": "200",
+post = {"userid": "asamant",
+        "password": "xyz123!",
         }
 post_id = posts.insert_one(post).inserted_id
 print(post)
