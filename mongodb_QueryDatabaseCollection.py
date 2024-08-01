@@ -7,18 +7,17 @@ client = pymongo.MongoClient("mongodb+srv://asamant:Spring2024@cluster0.oovet.mo
 
 
 
-db = client.gettingStartedSu23
+db = client.gettingStartedSp24
 people = db.people
 import datetime
 personDocument = {
   "name": { "first": "Abhay", "last": "Samant" },
   "birth": datetime.datetime(1912, 6, 23),
-  "death": datetime.datetime(2030,10,15),
   "contribs": [ "Engineer", "Teacher", "Friend" ],
- "views": 250}
+ "views": 255}
  
 people.insert_one(personDocument)
-myquery={"name.first":"Abhay"}
+myquery={"name.first":"Ishika"}
 x=people.find_one(myquery)
 print(x)
 if(x['name']=={'first': 'Abhay', 'last': 'Samant'}):
